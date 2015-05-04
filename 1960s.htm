@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src=jquery.mousewheel.js></script>
+<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+	</script>
+
+<style>
+html
+{
+overflow: hidden;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  background: url('images/1960s.jpg');
+  background-size: 6373px 683px;
+   background-repeat:no-repeat;
+   white-space: nowrap;
+}
+
+#page-wrap
+{
+width: 6373px;
+height: 683px;
+}
+
+.post
+{
+width: 6373px;
+height: 683px;
+}
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:1000;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:auto; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0; width:auto;}
+.callout {z-index:1000;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+</style>
+
+</head>
+<body>
+<div id="page-wrap">
+
+<div class="post">
+
+<a href="index.htm"><img style="position:absolute;top:50px;left:50px;width:100px;opacity:.15;" src="images/arrow.gif"></a>
+
+<div style="position: absolute; top:535px; left:528px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1961<br><br>
+        An advertisement to encourage voting.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:550px; left:1020px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1961<br><br>
+        <i>Print</i> Magazine January/February 1961 cover.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:535px; left:1510px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1962<br><br>
+        An advertisement for New York and Penn<br>pulp and paper manufacturers.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:475px; left:2025px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1962<br><br>
+        An advertisement for Plover Bond Paper Company.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:545px; left:2525px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1963<br><br>
+        An advertisement for Linweave's milano paper.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:558px; left:3015px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1964<br><br>
+        An advertisement for IF Studios, Inc.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:510px; left:3470px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1964<br><br>
+        An advertisement for Hammermill paper.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:505px; left:3925px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1964<br><br>
+        An advertisement by American Type Founders.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:530px; left:4410px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1966<br><br>
+        An advertisement for Appleton Supertuff paper.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:540px; left:4905px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Typography</strong>
+        <br>1966<br><br>
+        Instances of the emerging photo type technique.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:560px; left:5405px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Branding</strong>
+        <br>1966<br><br>
+        Advertisements designed to rebrand universities<br>as hip and modernized. 
+        </span>
+</a>
+</div>
+
+<div style="position: absolute; top:560px; left:5905px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1967<br><br>
+        An advertisement for Champion Papers Kromekote papers.
+    </span>
+</a>
+</div>
+    
+</div> <!--end post-->
+</div> <!--end page-wrap-->
+</body>
+</html>

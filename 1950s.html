@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src=jquery.mousewheel.js></script>
+<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+	</script>
+
+<style>
+html
+{
+overflow: hidden;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  background: url('images/1950s.jpg');
+  background-size: 6373px 683px;
+   background-repeat:no-repeat;
+   white-space: nowrap;
+}
+
+#page-wrap
+{
+width: 6373px;
+height: 683px;
+}
+
+.post
+{
+width: 6373px;
+height: 683px;
+}
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:1000;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:auto; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0; width:auto;}
+.callout {z-index:1000;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+</style>
+
+</head>
+<body>
+<div id="page-wrap">
+
+<div class="post">
+
+<a href="index.htm"><img style="position:absolute;top:50px;left:50px;width:100px;opacity:.15;" src="images/arrow.gif"></a>
+
+<div style="position: absolute; top:555px; left:528px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1950<br><br>
+        A 1950 cover of <i>Print</i> Magazine.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:520px; left:1065px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Layout</strong>
+        <br>1952<br><br>
+        A collection of many brands and<br>types of typewriter.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:565px; left:1625px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1952<br><br>
+        An advertisement for Cold-Type printing<br>by Ralph C. Coxhead Corporation.
+        </span>
+</a>
+</div>
+
+<div style="position: absolute; top:525px; left:2095px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1953<br><br>
+        Chiquita recipes and cookbook pages reflecting<br>a cultural obsession with bananas.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:585px; left:2505px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Illustration</strong>
+        <br>1954<br><br>
+        French colonial stamp designs.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:505px; left:2985px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Handlettering</strong>
+        <br>1956<br><br>
+        The step-by-step process of creating<br>hand-lettered type.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:485px; left:3495px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1957<br><br>
+        A collection of 1950's greeting cards.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:495px; left:3935px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1957<br><br>
+        Captured frames of animated movie title sequences.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:485px; left:4380px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1958<br><br>
+        Corporate logos of the 1950's.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:470px; left:4895px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Typography</strong>
+        <br>1959<br><br>
+        A playful narrative personifying letterforms.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:480px; left:5435px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Layout</strong>
+        <br>1948<br><br>
+        A <i>Print</i> spread dedicated to the<br>process of trademark design.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:540px; left:5905px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Layout</strong>
+        <br>1959<br><br>
+        An advertisement by Neenah Paper<br>Company of Kimberly-Clark.
+    </span>
+</a>
+</div>
+    
+</div> <!--end post-->
+</div> <!--end page-wrap-->
+</body>
+</html>

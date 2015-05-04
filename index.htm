@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Print History Museum</title>
+    <link rel="stylesheet" href="css/example.css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+
+<style>
+
+p
+{
+	margin-left:110px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 30pt;
+	opacity:.25;
+	z-index:1000;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+
+<div id="signs" class="scroll">
+<div style="float:left;"><p>Scroll down.</p></div>
+
+<a href="1940s.htm"><div id="first"><img src="images/years-02.jpg"></div>
+<a href="1950s.html"><div class="next"><img src="images/years-03.jpg"></div></a>
+<a href="1960s.htm"><div class="next"><img src="images/years-04.jpg"></div></a>
+<a href="1970s.html"><div class="next"><img src="images/years-05.jpg"></div></a>
+<a href="1980s.html"><div class="next"><img src="images/years-06.jpg"></div></a>
+<a href="1990s.html"><div class="next"><img src="images/years-07.jpg"></div></a>
+<a href="giftshop.htm"><div class="next"><img src="images/years-08.jpg"></div></a>
+
+</div>
+
+    <div class="horizon scroll">
+        <img src="images/horizon.png" alt="" />
+    </div>
+    <div class="middle scroll">
+        <img src="images/middle.png" alt="" />
+    </div>
+    <div class="front scroll">
+        <img src="images/front.png" alt="" />
+    </div>
+
+
+    
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/js/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
+
+
+</body>
+</html>

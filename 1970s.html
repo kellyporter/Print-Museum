@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src=jquery.mousewheel.js></script>
+<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+	</script>
+
+<style>
+html
+{
+overflow: hidden;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  background: url('images/1970s.jpg');
+  background-size: 6373px 683px;
+   background-repeat:no-repeat;
+   white-space: nowrap;
+}
+
+#page-wrap
+{
+width: 6373px;
+height: 683px;
+}
+
+.post
+{
+width: 6373px;
+height: 683px;
+}
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:1000;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:auto; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0; width:auto;}
+.callout {z-index:1000;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+</style>
+
+</head>
+<body>
+<div id="page-wrap">
+
+<a href="index.htm"><img style="position:absolute;top:50px;left:50px;width:100px;opacity:.15;" src="images/arrow.gif"></a>
+
+<div class="post">
+
+<div style="position: absolute; top:535px; left:528px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1970<br><br>
+        A call for entries to the Lettergraphics<br>alphabet design contest.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:535px; left:1015px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1970<br><br>
+        An advertisement for Progressive Color Corporation.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:555px; left:1515px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1971<br><br>
+        A paper advertisement.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:465px; left:2035px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Typography</strong>
+        <br>1971<br><br>
+        An advertisement for the typeface<br>Avant Garde Gothic.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:485px; left:2525px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1973<br><br>
+        An advertisement for Ludlow fluorescent papers.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:550px; left:2995px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1973<br><br>
+        A call for entries to a Day-Glo<br>Color Corp contest.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:505px; left:3465px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1973<br><br>
+        An advertisement for Great<br>White Whale Advertising.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:505px; left:3900px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1974<br><br>
+        An advertisement for the new Kodak<br>Pocket Instamatic camera.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:480px; left:4410px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1975<br><br>
+        Graphic design in knitting.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:540px; left:4925px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1976<br><br>
+        An advertisement for Sel Animation<br>of Edstan Studio.
+       </span>
+</a>
+</div>
+
+<div style="position: absolute; top:540px; left:5405px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Environmental Design</strong>
+        <br>1977<br><br>
+        Designs for lamppost banners<br>in Washington, D.C.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:535px; left:5905px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1978<br><br>
+        An advertisement for Letraset typefaces.
+    </span>
+</a>
+</div>
+    
+</div> <!--end post-->
+</div> <!--end page-wrap-->
+</body>
+</html>

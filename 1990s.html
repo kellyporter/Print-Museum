@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src=jquery.mousewheel.js></script>
+<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+	</script>
+
+<style>
+html
+{
+overflow: hidden;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  background: url('images/1990s.jpg');
+  background-size: 6373px 683px;
+   background-repeat:no-repeat;
+   white-space: nowrap;
+}
+
+#page-wrap
+{
+width: 6373px;
+height: 683px;
+}
+
+.post
+{
+width: 6373px;
+height: 683px;
+}
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:1000;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:auto; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0; width:auto;}
+.callout {z-index:1000;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+</style>
+
+</head>
+<body>
+<div id="page-wrap">
+
+<a href="index.htm"><img style="position:absolute;top:50px;left:50px;width:100px;opacity:.15;" src="images/arrow.gif"></a>
+
+<div class="post">
+
+<div style="position: absolute; top:535px; left:528px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1990<br><br>
+        A Kimberly-Clark paper advertisement.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:490px; left:1045px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Environmental Design</strong>
+        <br>1990<br><br>
+        Photos and diagrams of Walt Disney World road signs.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:545px; left:1545px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1990<br><br>
+        Ad page.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:590px; left:2005px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Illustration</strong>
+        <br>1990<br><br>
+        Satirical illustration by Paula Scher.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:555px; left:2435px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Application</strong>
+        <br>1992<br><br>
+        Applications of the MTV logo in TV commercials and spots.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:535px; left:2960px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Development</strong>
+        <br>1992<br><br>
+        Visual development of the MTV logo and identity.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:570px; left:3465px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Layout</strong>
+        <br>1992<br><br>
+        Covers and spreads from <i>CREEM</i> Magazine.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:595px; left:3920px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1993<br><br>
+        A compilation of 90's advertisements.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:550px; left:4420px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Illustration</strong>
+        <br>1993<br><br>
+        A computer-generated image demonstrating new technology.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:575px; left:4935px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Illustration</strong>
+        <br>1993<br><br>
+        A computer-generated image demonstrating new technology.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:550px; left:5420px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Illustration</strong>
+        <br>1993<br><br>
+        Illustration and spreads in a Batman pop-up book.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:535px; left:5905px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1993<br><br>
+        An advertisement for the computer<br>program Painter 2.0.
+    </span>
+</a>
+</div>
+    
+</div> <!--end post-->
+</div> <!--end page-wrap-->
+</body>
+</html>

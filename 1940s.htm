@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src=jquery.mousewheel.js></script>
+<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+	</script>
+
+<style>
+html
+{
+overflow: hidden;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  background: url('images/1940s.jpg');
+  background-size: 6373px 683px;
+   background-repeat:no-repeat;
+   white-space: nowrap;
+}
+
+#page-wrap
+{
+width: 6373px;
+height: 683px;
+}
+
+.post
+{
+width: 6373px;
+height: 683px;
+}
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:1000;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:auto; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0; width:auto;}
+.callout {z-index:1000;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
+</style>
+
+</head>
+<body>
+<div id="page-wrap">
+
+<div class="post">
+
+<a href="index.htm"><img style="position:absolute;top:50px;left:50px;width:100px;opacity:.15;" src="images/arrow.gif"></a>
+
+<div style="position: absolute; top:535px; left:528px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1940<br><br>
+        A demonstration of printmaking techniques.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:525px; left:1015px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1941<br><br>
+        A collection of ad designs from the 20's to the 40's.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:565px; left:1515px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Diagram</strong>
+        <br>1941<br><br>
+        A chart describing the various elements of design.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:475px; left:2015px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Illustration</strong>
+        <br>1941<br><br>
+        A satirical political cartoon.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:485px; left:2525px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1942<br><br>
+        An advertisement by George C. Thayer<br>and Charles F. Libbie, Jr.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:505px; left:3015px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Handlettering</strong>
+        <br>1944<br><br>
+        A compilation of calligraphy by various designers.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:505px; left:3495px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1945<br><br>
+        A compilation of 1940's advertising and signage.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:505px; left:3915px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Design</strong>
+        <br>1945<br><br>
+        Cover design for OWI booklet<br><i>America Fights Disease.</i>
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:480px; left:4410px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Handlettering</strong>
+        <br>1947<br><br>
+        A collection of German gothic lettering.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:500px; left:4905px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1947<br><br>
+        An advertisement demonstrating the evolution<br>of design toward minimalism. 
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:540px; left:5405px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Advertisement</strong>
+        <br>1948<br><br>
+        An advertisement by Phoenix Metal Cap Co.
+    </span>
+</a>
+</div>
+
+<div style="position: absolute; top:480px; left:5905px;">
+<!--First tooltip-->
+<a href="#" class="tooltip">
+    <img src="images/plaque.png" style="width:150px">
+    <span>
+        <img class="callout" src="images/callout.gif" />
+        <strong>Diagram</strong>
+        <br>1948<br><br>
+        The step-by-step process of package design.
+    </span>
+</a>
+</div>
+    
+</div> <!--end post-->
+</div> <!--end page-wrap-->
+</body>
+</html>
